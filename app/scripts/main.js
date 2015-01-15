@@ -1,1 +1,7 @@
-console.log('\'Allo \'Allo!');
+$("#formulario").validate({
+    rules: {
+        nombre: {            
+            required: true
+        }
+    }
+});

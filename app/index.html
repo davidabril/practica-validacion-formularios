@@ -19,14 +19,57 @@
 
     <div class="hero-unit">
       <h1>Práctica validación formularios</h1>
-      <p>Aquí debería ir el enlace a <a href="https://github.com/juanda99/practica-validacion-formularios">tu respositorio en GitHub</a>, donde estará la versión de desarrollo.</p>
-    </div>
+        <form id="formulario" novalidate action="" method="post">
+            <div>
+                <label for="nombre">Nombre:
+                    <span class="important">*</span>
+                </label>
+                <input type="text" id="nombre" name="nombre"/>
+            </div>
+            <div>
+                <label for="apellidos">Apellidos:
+                    <span class="important">*</span>
+                </label>
+                <input type="text" id="apellidos" name="apellidos"/>
+            </div>  
+            <div>
+                <label for="telefono">Teléfono:
+                    <span class="important">*</span>
+                </label>
+                <input type="text" id="telefono" name="telefono"/>
+            </div> 
+            <div>
+                <label for="email">E-mail:
+                    <span class="important">*</span>
+                </label>
+                <input type="email" id="email" name="email" />
+            </div>
+            <div>
+                <label for="confirmaremail">Confirmar E-mail:
+                    <span class="important">*</span>
+                </label>
+                <input type="email" id="confirmaremail" name="confirmaremail" />
+            </div>            
+            <div>
+                <label for="url">Url:</label>
+                <input type="url" id="url" name="url" />
+            </div>
 
+            <div>
+                <input type="submit" value="Enviar" />
+            </div>
+        </form>      
+      <p>Enlace a <a href="https://github.com/davidabril/practica-validacion-formularios" target="_blank"> mi respositorio en GitHub</a>, donde está la versión de desarrollo.</p>
+    </div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/jquery-validate/dist/jquery.validate.js"></script>
+    <script src="scripts/localization.js"></script>    
     <!-- endbower -->
     <!-- endbuild -->
+
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
