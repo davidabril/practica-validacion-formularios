@@ -89,15 +89,16 @@
 		    </fieldset>        
 		            
 			<fieldset><legend><strong>Datos de facturación:</strong></legend>
-				<div id="datos_facturacion">	
-					<div class="radioCheck">Demandante:
-			            <label for="demandanteparticular">
+				<div id="datos_facturacion">
+				<span class="demandante">Demandante:</span>	
+					<div class="radioCheck">
+			            <label for="demandanteparticular" >
 			                <input type="radio" name="demandante" value="0" id="demandanteparticular" checked="checked" />
-			                Particular
+			                <span class="seleccionar">Particular</span>
 			            </label>
-			            <label for="demandanteempresa">
+			            <label for="demandanteempresa" class="seleccionar">
 			                <input type="radio" name="demandante" value="1" id="demandanteempresa" />
-			                Empresa
+			                <span class="seleccionar">Empresa</span>
 			            </label>
 			        </div>
 
@@ -226,7 +227,7 @@
 	</form>       
 
 	<div>
-		<p>Enlace a <a href="https://github.com/Jessica-Caraballo/practica-validacion-formularios" target="_blank"> mi respositorio en GitHub</a>, donde está la versión de desarrollo.</p>
+		<p>Enlace a <a href="https://github.com/davidabril/practica-validacion-formularios" target="_blank"> mi respositorio en GitHub</a>, donde está la versión de desarrollo.</p>
 	</div>
 
     <!-- build:js(.) scripts/vendor.js -->

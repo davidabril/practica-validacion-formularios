@@ -24,9 +24,8 @@ if (isset($_REQUEST['cp'])) {
         $cp = $_REQUEST['cp'];
     }
 
-    // Preparamos y lanzamos la consulta   
-    $sql = $db->prepare("SELECT t_provincias FROM provincias WHERE CodProv=?");
-    //$resultado->execute($cp);
+    // Preparamos y lanzamos la consulta
+    $sql = $db->prepare("SELECT t_municipios FROM municipios WHERE CodProv=?");
     $sql->bindParam(1, $cp, PDO::PARAM_STR);
     $sql->execute();
 
@@ -38,11 +37,10 @@ if (isset($_REQUEST['cp'])) {
        $valid='false';
     }
 
-    // Recorremos la consulta
-    $okey = $sql->fetch();       
-    
-    //Devolvemos el resultado de la provincia con ese CP
-    echo $valid;
+    // Recorremos la consulta y devolvemos los options y los valores devueltos en la consulta       
+    while($okey = $sql->fetch()){
+        echo '<option value="'.$okey[0].'">' . $okey[0] . "</option>";
+    }
 
 // Liberamos recursos (BBDD y consulta)
 $sql=null;
