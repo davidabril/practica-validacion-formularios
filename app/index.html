@@ -18,8 +18,9 @@
   </head>
 
   <body>
+  <div id="header">
   <h1>Práctica validación formularios</h1>
-
+  </div>
 	<form id="formulario" novalidate action="" method="post">
 		<div id="contenedor">    
 			<fieldset><legend><strong>Información de Contacto:</strong></legend>
@@ -108,14 +109,15 @@
 			            <label for="nifcif" id="lblnif">
 			            	<span id="textonifcif">NIF:</span>			            	
 			                <span class="important">*</span>
-			                <input type="text" name="nifcif" value="" id="nifcif"/>
-			            </label>
-			        
+			            </label>			                
+			                <input type="text" name="nifcif" value="" id="nifcif"/>			        
+		            </div>
+			        <div>
 			            <label for="particularempresa" id="lblparticular">
 			            	<span id="textoparticularempresa">Nombre:</span>			
 			            	<span class="important">*</span>
-			            	<input type="text" name="particularempresa" value="" id="particularempresa" />
 			            </label>
+			            	<input type="text" name="particularempresa" value="" id="particularempresa" /> 
 			        </div>
 					<div>
 			            <label for="direccion">Dirección:
